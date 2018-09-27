@@ -72,10 +72,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         activity=this;
-//        mToolbar = (Toolbar) findViewById(R.id.toolbar);
-//
-//
-//        final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -203,24 +199,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),
                     ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
-//            Uri uri= Uri.parse(mCursor.getString(ArticleLoader.Query.PHOTO_URL));
-//            Bitmap bitmap = null;
-//            InputStream is ;
-//            try {
-//                is = getContentResolver().openInputStream(uri);
-//                bitmap = BitmapFactory.decodeStream(is);
-//                } catch (java.io.IOException e) {
-//                e.printStackTrace();
-//                Toast.makeText(getApplicationContext(),""+uri,Toast.LENGTH_LONG).show();
-//            }
-//            if(bitmap!=null){
-//                Palette.from(bitmap).generate(
-//                        new Palette.PaletteAsyncListener() {
-//                            public void onGenerated(@NonNull Palette palette) {
-//                                holder.cardView.setCardBackgroundColor(palette.getMutedColor(getResources().getColor(R.color.ltgray)));
-//                            }
-//                        });
-//            }
+
 
         }
 

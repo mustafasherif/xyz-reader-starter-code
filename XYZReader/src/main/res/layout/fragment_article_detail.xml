@@ -11,6 +11,7 @@
         android:layout_height="300dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:fitsSystemWindows="true"
+        android:elevation="@dimen/toolbar_elevation"
         >
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -36,7 +37,6 @@
                 android:layout_height="120dp"
                 android:paddingTop="2dp"
                 android:background="@color/theme_primary_dark"
-                android:elevation="4dp"
                 android:layout_gravity="bottom"
                 app:layout_collapseMode="pin"
                 >
